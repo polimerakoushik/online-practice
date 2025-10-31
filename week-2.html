@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Industry 4.0 Quiz</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .question { margin-bottom: 20px; }
+    .option {
+      display: block;
+      margin: 5px 0;
+      padding: 5px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+    .correct { background-color: #c8f7c5; }
+    .incorrect { background-color: #f7c5c5; }
+  </style>
+</head>
+<body>
+
+  <h1>Industry 4.0 Quiz</h1>
+
+  <!-- Question Template -->
+  <div class="question" data-answer="b">
+    <p>1. Which technological innovation drove the First Industrial Revolution?</p>
+    <div class="option" data-value="a">a. Electricity and the assembly line</div>
+    <div class="option" data-value="b">b. Invention of steam engine and construction of railways</div>
+    <div class="option" data-value="c">c. Semiconductor fabrication techniques</div>
+    <div class="option" data-value="d">d. Artificial Intelligence and Cyber-Physical Systems</div>
+  </div>
+
+  <div class="question" data-answer="a">
+    <p>2. Conventional application area for robots?</p>
+    <div class="option" data-value="a">a. Automotive industry</div>
+    <div class="option" data-value="b">b. Precision agriculture</div>
+    <div class="option" data-value="c">c. Nursing</div>
+    <div class="option" data-value="d">d. Space exploration</div>
+  </div>
+
+  <div class="question" data-answer="d">
+    <p>3. A depression is characterized by:</p>
+    <div class="option" data-value="a">a. Increased investment in manufacturing</div>
+    <div class="option" data-value="b">b. Shorter duration of economic hardship</div>
+    <div class="option" data-value="c">c. Lower unemployment rates</div>
+    <div class="option" data-value="d">d. Higher levels of economic damage and longer duration</div>
+  </div>
+
+  <div class="question" data-answer="b">
+    <p>4. "Main nervous system" in manufacturing industry?</p>
+    <div class="option" data-value="a">a. Supply-Chain Management (SCM)</div>
+    <div class="option" data-value="b">b. Information and Communication Technology (ICT)</div>
+    <div class="option" data-value="c">c. Energy-price monitoring</div>
+    <div class="option" data-value="d">d. Human-resources planning</div>
+  </div>
+
+  <div class="question" data-answer="b">
+    <p>5. Emerging markets are expected in:</p>
+    <div class="option" data-value="a">a. Developed countries</div>
+    <div class="option" data-value="b">b. Developing countries</div>
+    <div class="option" data-value="c">c. Polar regions</div>
+    <div class="option" data-value="d">d. Nations with zero population growth</div>
+  </div>
+
+  <div class="question" data-answer="c">
+    <p>6. Key feature of Lean production?</p>
+    <div class="option" data-value="a">a. Emphasizes automation</div>
+    <div class="option" data-value="b">b. Focuses solely on financial outcomes</div>
+    <div class="option" data-value="c">c. Considers the customer's perspective</div>
+    <div class="option" data-value="d">d. Increases inventory levels</div>
+  </div>
+
+  <div class="question" data-answer="b">
+    <p>7. Second pillar of Lean production?</p>
+    <div class="option" data-value="a">a. Kaizen</div>
+    <div class="option" data-value="b">b. Just-in-Time</div>
+    <div class="option" data-value="c">c. Kanban</div>
+    <div class="option" data-value="d">d. Total Productive Maintenance</div>
+  </div>
+
+  <div class="question" data-answer="c">
+    <p>8. First step in "5 steps of walking a value stream"?</p>
+    <div class="option" data-value="a">a. Build a leadership team</div>
+    <div class="option" data-value="b">b. Walk it - discuss value</div>
+    <div class="option" data-value="c">c. Focus on a single value stream</div>
+    <div class="option" data-value="d">d. Schedule follow-up</div>
+  </div>
+
+  <div class="question" data-answer="b">
+    <p>9. Fundamental building blocks of smart business model?</p>
+    <div class="option" data-value="a">a. Marketing campaigns</div>
+    <div class="option" data-value="b">b. Customer values and key processes</div>
+    <div class="option" data-value="c">c. Warehouse locations</div>
+    <div class="option" data-value="d">d. Stock exchange metrics</div>
+  </div>
+
+  <div class="question" data-answer="d">
+    <p>10. Key attributes of smart business model?</p>
+    <div class="option" data-value="a">a. Value proposition</div>
+    <div class="option" data-value="b">b. Revenue streams</div>
+    <div class="option" data-value="c">c. Technologies</div>
+    <div class="option" data-value="d">d. All of these</div>
+  </div>
+
+  <div class="question" data-answer="a">
+    <p>11. Big Data analytics in smart factories helps with:</p>
+    <div class="option" data-value="a">a. Generating knowledge</div>
+    <div class="option" data-value="b">b. Reducing data storage</div>
+    <div class="option" data-value="c">c. Eliminating sensors</div>
+    <div class="option" data-value="d">d. Increasing manual paperwork</div>
+  </div>
+
+  <div class="question" data-answer="c">
+    <p>12. Why are smart factories necessary?</p>
+    <div class="option" data-value="a">a. Reduce number of products</div>
+    <div class="option" data-value="b">b. Support rigid systems</div>
+    <div class="option" data-value="c">c. High production with less time and risk</div>
+    <div class="option" data-value="d">d. Operate in low-demand markets</div>
+  </div>
+
+  <div class="question" data-answer="a">
+    <p>13. Smart Grid supports Smart Factories?</p>
+    <div class="option" data-value="a">a. True</div>
+    <div class="option" data-value="b">b. False</div>
+  </div>
+
+  <div class="question" data-answer="a">
+    <p>14. Timely delivery and reliability are part of:</p>
+    <div class="option" data-value="a">a. Supply-Chain Management loop</div>
+    <div class="option" data-value="b">b. Single-sourcing</div>
+    <div class="option" data-value="c">c. Random demand generation</div>
+    <div class="option" data-value="d">d. Personal mail delivery</div>
+  </div>
+
+  <div class="question" data-answer="a">
+    <p>15. Industry 4.0 is the fourth industrial revolution?</p>
+    <div class="option" data-value="a">a. True</div>
+    <div class="option" data-value="b">b. False</div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.option').forEach(option => {
+      option.addEventListener('click', () => {
+        const question = option.closest('.question');
+        const correct = question.dataset.answer;
+        const selected = option.dataset.value;
+
+        question.querySelectorAll('.option').forEach(opt => {
+          opt.classList.remove('correct', 'incorrect');
+        });
+
+        if (selected === correct) {
+          option.classList.add('correct');
+        } else {
+          option.classList.add('incorrect');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

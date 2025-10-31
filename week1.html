@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IIoT Online MCQ Exam</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f0f0; padding: 20px; }
+    h1 { text-align: center; }
+    .question { background: #fff; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+    .options button {
+      display: block;
+      margin: 5px 0;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background: #e0e0e0;
+      transition: background 0.3s;
+    }
+    .options button.correct { background-color: #a5d6a7; }
+    .options button.incorrect { background-color: #ef9a9a; }
+  </style>
+</head>
+<body>
+  <h1>Industrial IoT Practice Exam</h1>
+
+  <div class="question" data-answer="2">
+    <p>1. Which sensor system type is characterized by an output that oscillates before reaching steady state?</p>
+    <div class="options">
+      <button>Zero order system</button>
+      <button>First order system</button>
+      <button>Second order system</button>
+      <button>Linear system</button>
+    </div>
+  </div>
+
+  <div class="question" data-answer="1">
+    <p>2. Which of the following is NOT a correct example of a transducer?</p>
+    <div class="options">
+      <button>Microphone</button>
+      <button>Wire</button>
+      <button>Speaker</button>
+      <button>Antenna</button>
+    </div>
+  </div>
+
+  <div class="question" data-answer="3">
+    <p>3. The response of which sensor depends on the magnitude and orientation of input?</p>
+    <div class="options">
+      <button>Scalar sensor</button>
+      <button>Passive sensor</button>
+      <button>Analog sensor</button>
+      <button>Vector sensor</button>
+    </div>
+  </div>
+
+  <div class="question" data-answer="2">
+    <p>4. Which type of Zigbee node is responsible for network initialization and maintenance?</p>
+    <div class="options">
+      <button>Router</button>
+      <button>End Device</button>
+      <button>Coordinator</button>
+      <button>Sensor</button>
+    </div>
+  </div>
+
+  <div class="question" data-answer="0">
+    <p>5. Which two layers does IEEE 802.15.4 provide a framework for?</p>
+    <div class="options">
+      <button>MAC and PHY</button>
+      <button>IP and TCP</button>
+      <button>HTTP and SSL</button>
+      <button>FTP and DNS</button>
+    </div>
+  </div>
+
+  <div class="question" data-answer="1">
+    <p>6. How often are time slots allocated in Wireless HART?</p>
+    <div class="options">
+      <button>1 per second</button>
+      <button>10ms per slot</button>
+      <button>100ms per slot</button>
+      <button>1 second per device</button>
+    </div>
+  </div>
+
+  <div class="question" data-answer="2">
+    <p>7. How do passive RFID tags operate?</p>
+    <div class="options">
+      <button>Use an internal battery</button>
+      <button>Use an external solar panel</button>
+      <button>Are powered by the reader inductively</button>
+      <button>Are manually activated</button>
+    </div>
+  </div>
+
+  <div class="question" data-answer="1">
+    <p>8. Bluetooth technology is based on which type of networking?</p>
+    <div class="options">
+      <button>Mesh</button>
+      <button>Piconet (Ad-hoc)</button>
+      <button>Star</button>
+      <button>Bus</button>
+    </div>
+  </div>
+
+  <div class="question" data-answer="2">
+    <p>9. What process is used by Z-wave to bypass radio dead spots?</p>
+    <div class="options">
+      <button>Network Slicing</button>
+      <button>Subnetting</button>
+      <button>Healing</button>
+      <button>Network Partitioning</button>
+    </div>
+  </div>
+
+  <div class="question" data-answer="0">
+    <p>10. Which of the following best represents the ‘trunk’ in the IoT analogy?</p>
+    <div class="options">
+      <button>ARM (Architectural Reference Model)</button>
+      <button>IoT applications</button>
+      <button>Communication protocols</button>
+      <button>End-user interfaces</button>
+    </div>
+  </div>
+
+  <div class="question" data-answer="3">
+    <p>11. What is the function of the Registration Interface (RI) in CoRE?</p>
+    <div class="options">
+      <button>Processes user login</button>
+      <button>Assigns MAC addresses</button>
+      <button>Encrypts transmitted data</button>
+      <button>Registers IoT resources to the directory</button>
+    </div>
+  </div>
+
+  <div class="question" data-answer="3">
+    <p>12. Which of the following is not a message type in CoAP?</p>
+    <div class="options">
+      <button>CON</button>
+      <button>NON</button>
+      <button>RST</button>
+      <button>ECHO</button>
+    </div>
+  </div>
+
+  <div class="question" data-answer="2">
+    <p>13. Which of the following is an IP-based solution proposed by IETF for IoT?</p>
+    <div class="options">
+      <button>Zigbee Alliance</button>
+      <button>Bluetooth SIG</button>
+      <button>CoRE</button>
+      <button>Wi-Fi Alliance</button>
+    </div>
+  </div>
+
+  <div class="question" data-answer="0">
+    <p>14. Sensor calibration is typically used for weeding-out repeatable errors in sensor readings. True or False?</p>
+    <div class="options">
+      <button>True</button>
+      <button>False</button>
+    </div>
+  </div>
+
+  <div class="question" data-answer="1">
+    <p>15. Which of the following is NOT true about WirelessHART?</p>
+    <div class="options">
+      <button>It is a license-free protocol</button>
+      <button>It is not compatible with any legacy devices</button>
+      <button>Uses IEEE 802.15.4 standard</button>
+      <button>Makes device placements more accessible</button>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.question').forEach((q) => {
+      const correctIndex = parseInt(q.dataset.answer);
+      const buttons = q.querySelectorAll('button');
+      buttons.forEach((btn, i) => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.disabled = true);
+          if (i === correctIndex) {
+            btn.classList.add('correct');
+          } else {
+            btn.classList.add('incorrect');
+            buttons[correctIndex].classList.add('correct');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
