@@ -182,17 +182,30 @@
     <div class="option" data-value="d">d. Big data can be used to analyze patterns in network behavior, customer experiences, and connectivity issues.</div>
  </div>
 
+ 
+
+  <button id="submitBtn">Submit</button>
+  <div id="score"></div>
+
   <script>
+    const questions = document.querySelectorAll('.question');
+    let selectedAnswers = new Map();
+
     document.querySelectorAll('.option').forEach(option => {
       option.addEventListener('click', () => {
         const question = option.closest('.question');
         const correct = question.dataset.answer;
         const selected = option.dataset.value;
 
+        // Store selected answer
+        selectedAnswers.set(question, selected);
+
+        // Reset styles
         question.querySelectorAll('.option').forEach(opt => {
           opt.classList.remove('correct', 'incorrect');
         });
 
+        // Highlight selection
         if (selected === correct) {
           option.classList.add('correct');
         } else {
@@ -200,8 +213,22 @@
         }
       });
     });
+
+    document.getElementById('submitBtn').addEventListener('click', () => {
+      let score = 0;
+      questions.forEach(q => {
+        const correct = q.dataset.answer;
+        const selected = selectedAnswers.get(q);
+        if (selected === correct) {
+          score++;
+        }
+      });
+
+      document.getElementById('score').textContent = `Your Score: ${score} / ${questions.length}`;
+    });
   </script>
 
 </body>
 </html>
+
     
